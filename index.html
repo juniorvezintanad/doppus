@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doppus - Manutenção Rápida</title>
+  <meta name="description" content="Estamos em manutenção rápida, mas você ainda pode vender online com 0% de taxas e 100% de autonomia.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: poppins, Helvetica, sans-serif;
+      background: url("img/doppus-bg.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+      padding: 40px;
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* Coluna da esquerda */
+    .left {
+      flex: 1;
+    }
+
+    .left img.logo {
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    .left h4 {
+      color: #ff6600;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .left h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+
+    .left h1 span {
+      color: #ff6600;
+      font-weight: bold;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 20px;
+      margin-bottom: 30px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+
+    .feature img {
+      width: 36px;
+      height: 36px;
+      margin-top: 3px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .btn-orange {
+      background: #ff6600;
+      color: #fff;
+    }
+
+    .btn-orange:hover {
+      background: #e25400;
+    }
+
+    .btn-outline {
+      border: 2px solid #ff6600;
+      color: #ff6600;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: #ff6600;
+      color: #fff;
+    }
+
+    /* Coluna da direita */
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <!-- Coluna da esquerda -->
+    <div class="left">
+      <img src="img/logodoppus.png" alt="Doppus" class="logo">
+
+      <h4>Estamos em manutenção rápida</h4>
+      <h1>
+        Mas você ainda pode vender online com <br>
+        <span>0% de taxas e 100% de autonomia.</span>
+      </h1>
+
+      <div class="features">
+        <div class="feature">
+          <img src="img/Design_sem_nome_1.png" alt="check">
+          <span>Checkout de alta conversão, internacional e antiquedas</span>
+        </div>
+        <div class="feature">
+          <img src="img/Design_sem_nome_1.png" alt="check">
+          <span>Área de membros white label e com certificado de conclusão</span>
+        </div>
+        <div class="feature">
+          <img src="img/Design_sem_nome_1.png" alt="check">
+          <span>Turbo upsell: Diversas ferramentas pra aumentar o seu LTV</span>
+        </div>
+        <div class="feature">
+          <img src="img/Design_sem_nome_1.png" alt="check">
+          <span>Receba direto na sua conta (MP, Pagar.me, Cielo ou BTG)</span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a href="https://wa.me/5548988401520?text=Ol%C3%A1%2C%20quero%20falar%20com%20um%20especialista%20da%20Doppus!" class="btn-orange">Falar com especialista</a>
+        <a href="https://sys.doppus.app/Login/?r=%2FView" class="btn-outline">Entrar</a>
+      </div>
+    </div>
+
+    <!-- Coluna da direita -->
+    <div class="right">
+      <img src="img/menina-com-cellular.webp" alt="Imagem de destaque">
+    </div>
+  </section>
+</body>
+</html>
